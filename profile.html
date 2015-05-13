@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="public/stylesheets/style.css">
+    <title>My Profile</title>
+  </head>
+  <body>
+
+  <div class="container">
+  <section class="myprofile">
+    <h2> My Profile </h2>
+<!--Form-->
+    <form method= "POST" action="/profile/edit">
+      <div>
+        <label for="firstname-field">First Name</label>
+        <input class="userdata" type="text" name="firstname" id="firstname-field">
+      </div>
+      <div>
+        <label for="lastname-field">Last Name</label>
+        <input class="userdata" type="text" name="lastname" id="lastname-field">
+      </div>
+      <div>
+        <label for="email-field">Email</label>
+        <input class="userdata" type="email" name="email" id="email-field" placeholder="email@email.com">
+      </div>
+      <div>
+        <label for="password-field">Password</label>
+        <input class="userdata" type="password" name="password" id="password-field">
+      </div>
+      <div>
+        <label for="gender-field">Gender</label>
+        <input class="userdata" type="radio" name="gender" id="gender-field" value= "male">Male
+        <input class="userdata" type="radio" name="gender" id="gender-field" value= "female">Female
+      </div>
+      <div>
+        <input class="submit" type="submit" value="Update">
+      </div>
+    </form>
+  </section>  
+  </div>
+  </body>
+</html>
+
+
+<!-- Email, Password, Gender, First Name, Last Name -->
