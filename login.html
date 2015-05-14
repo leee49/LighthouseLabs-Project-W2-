@@ -2,55 +2,83 @@
 <html>
 
   <head>
+  <!-- BOOTSTRAP-->
+     <!--Latest compiled and minified CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<!-- END -->
+
     <link rel="stylesheet" href="public/stylesheets/style.css">
-    <title> Eunice Project </title>
+    <title> e u n i c e </title>
   </head>
   <body>
+  <h2 class="maintitle"> welcome. </h2>
   <div class="container">
-  <section class="login">
-    <h2> User Login </h2>
-<!--Login form-->
-    <form method= "POST" action="login.html">
-      <div>
-        <label for="email-field">Email</label>
-        <input class="userdata" type="email" name="email" id="email-field" placeholder="email@email.com">
-      </div>
-      <div>
-        <label for="password-field">Password</label>
-        <input class="userdata" type="password" name="password" id="password-field">
-      </div>
-      <div>
-        <input class="submit" type="submit" value="Login">
-      </div>
-    </form>
-  </section>
+  <div class="row">
+    <div class="col-md-2">
+      <ul class="nav nav-pills">
+        <li role="presentation" class="active"><a href="#">Home</a></li>
+        <li role="presentation"><a href="#">Profile</a></li>
+        <li role="presentation"><a href="#">Messages</a></li>
+      </ul>
+    </div>
+    <div class="col-md-2">
+      <section class="login">
+        <h2> User Login </h2>
+    <!--Login form-->
+        <form method= "POST" action="/login">
+          <div>
+            <label for="email-field">Email</label>
+            <input class="userdata" type="email" name="email" id="email-field" placeholder="email@email.com">
+          </div>
+          <div>
+            <label for="password-field">Password</label>
+            <input class="userdata" type="password" name="password" id="password-field">
+          </div>
+          <div>
+            <input class="submit" type="submit" value="Login">
+          </div>
+        </form>
+      </section>
+    </div>
 
+    <div class="col-md-2 col-md-offset-2">
 <!--Signup form-->
-  <section class="signup">
-    <h2> Sign up here </h2>
-    <form method="POST" action="login.html">
-      <div>
-        <label for="Firstname">First Name</label>
-        <input class="userdata" type="text" name="firstname" id="Firstname">
-      </div>
-      <div>
-        <label for="Lastname">Last Name</label>
-        <input class="username" type="text" name="lastname" id="Lastname">
-      </div>
+      <section class="signup">
+        <h2> Sign up here </h2>
+        <form method="POST" action="/signup">
+          <div>
+            <label for="Firstname">First Name</label>
+            <input class="userdata" type="text" name="firstname" id="Firstname">
+          </div>
+          <div>
+            <label for="Lastname">Last Name</label>
+            <input class="username" type="text" name="lastname" id="Lastname">
+          </div>
 
-      <div>
-        <label for="email-field-signup">Email</label>
-        <input class="userdata" type="email" name="email" id="email-field-signup" placeholder="email@email.com">
+          <div>
+            <label for="email-field-signup">Email</label>
+            <input class="userdata" type="email" name="email" id="email-field-signup" placeholder="email@email.com">
+          </div>
+          <div>
+            <label for="password-field-signup">Password</label>
+            <input class="userdata" type="password" name"password" id="password-field-signup">
+          </div>
+          <div>
+            <input class="submit" type="submit" value="Sign up">
+          </div>
+        </form>
+      </section>
+    </div>
+  </div>
+  <div class="row">
+      <div class="col-md-offset-2 col-md-4">
+        <!--<section class="paragraph">-->
+          <h2> hipster ipsum </h2>
+          <p> Photo booth 90's pork belly lumbersexual sustainable ennui. Tilde chia sartorial pork belly. Pickled sustainable biodiesel Wes Anderson. Tousled 90's cornhole, butcher migas slow-carb umami Williamsburg meditation readymade bicycle rights bitters. Gluten-free irony sustainable, meh street art next level Thundercats meditation. Butcher actually gentrify Carles scenester, tote bag pour-over small batch Banksy locavore. Pinterest twee pickled disrupt, gluten-free normcore Intelligentsia 90's.</p>
       </div>
-      <div>
-        <label for="password-field-signup">Password</label>
-        <input class="userdata" type="password" name"password" id="password-field-signup">
-      </div>
-      <div>
-        <input class="submit" type="submit" value="Sign up">
-      </div>
-    </form>
-  </section>
+  </div>
+
+
   </div>
   </body>
 </html>
